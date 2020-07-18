@@ -1,0 +1,122 @@
+ html {
+     box-sizing: border-box;
+     height: 100%;
+ }
+ 
+ *,
+ ::before,
+ *::after {
+     box-sizing: inherit;
+ }
+ 
+ body {
+     height: 100%;
+     font-family: Arial, Helvetica, sans-serif;
+     color: #ffffff;
+     /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#0a0a0a+3,0a0a0a+3,959595+43,959595+43,959595+55,959595+61,4e4e4e+76,383838+87 */
+     background: rgb(10, 10, 10);
+     /* Old browsers */
+     background: -moz-linear-gradient(top, rgba(10, 10, 10, 1) 3%, rgba(10, 10, 10, 1) 3%, rgba(149, 149, 149, 1) 43%, rgba(149, 149, 149, 1) 43%, rgba(149, 149, 149, 1) 55%, rgba(149, 149, 149, 1) 61%, rgba(78, 78, 78, 1) 76%, rgba(56, 56, 56, 1) 87%);
+     /* FF3.6-15 */
+     background: -webkit-linear-gradient(top, rgba(10, 10, 10, 1) 3%, rgba(10, 10, 10, 1) 3%, rgba(149, 149, 149, 1) 43%, rgba(149, 149, 149, 1) 43%, rgba(149, 149, 149, 1) 55%, rgba(149, 149, 149, 1) 61%, rgba(78, 78, 78, 1) 76%, rgba(56, 56, 56, 1) 87%);
+     /* Chrome10-25,Safari5.1-6 */
+     background: linear-gradient(to bottom, rgba(10, 10, 10, 1) 3%, rgba(10, 10, 10, 1) 3%, rgba(149, 149, 149, 1) 43%, rgba(149, 149, 149, 1) 43%, rgba(149, 149, 149, 1) 55%, rgba(149, 149, 149, 1) 61%, rgba(78, 78, 78, 1) 76%, rgba(56, 56, 56, 1) 87%);
+     /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+     filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#0a0a0a', endColorstr='#383838', GradientType=0);
+     background-attachment: fixed;
+ }
+ 
+ header {
+     text-align: center;
+     padding: 40px 0;
+ }
+ 
+ img {
+     max-width: 100%;
+ }
+ 
+ .contenedor {
+     max-width: 1200px;
+     margin: 0 auto;
+ }
+ 
+ .hero {
+     margin-bottom: 40px;
+ }
+ 
+ h2 {
+     text-align: center;
+     text-transform: uppercase;
+     font-size: 30px;
+ }
+ 
+ .Lista-productos {
+     margin-top: 20px;
+     padding: 0;
+ }
+ 
+ .Lista-productos li {
+     float: left;
+     width: 50%;
+     padding: 20px;
+     list-style: none;
+     text-align: center;
+     /*para que cada polo este separado*/
+ }
+ 
+ .Lista-productos li:nth-child(2n+1) {
+     clear: both;
+ }
+ /*que cuando se haga peque;o se va mostrar en dos en dos*/
+ 
+ @media(min-width:768px) {
+     .Lista-productos li {
+         width: 33.3%;
+         padding: 20px;
+     }
+     .Lista-productos li:nth-child(2n+1) {
+         clear: unset;
+         /*con unset eliminamos el 2n + 1*/
+     }
+     .Lista-productos li:nth-child(3n+1) {
+         clear: both;
+         /*lo podemos en tres en tres*/
+     }
+ }
+ 
+ .Lista-productos li img {
+     border: 5px solid rgb(54, 53, 53);
+     transition: border-color .3s ease-in-out;
+     /*es para hacer una trans*/
+ }
+ 
+ .Lista-productos li img:hover {
+     border: 5px solid rgb(146, 170, 147);
+ }
+ 
+ .Lista-productos li p {
+     font-size: 28px;
+     font-weight: bold;
+     margin: 10px 0 0 0;
+ }
+ 
+ span.precio {
+     color: #ffce00;
+     font-size: 40px;
+ }
+ 
+ .boton {
+     background-color: #ffce00;
+     padding: 10px 40px;
+     margin-top: 10px;
+     display: inline-block;
+     text-transform: uppercase;
+     text-decoration: none;
+     font-weight: bold;
+     color: black;
+     transition: backgroud-color .3s ease-in-out;
+ }
+ 
+ .boton:hover {
+     background-color: #ffe787;
+ }
